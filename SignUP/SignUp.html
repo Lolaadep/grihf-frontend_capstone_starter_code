@@ -44,7 +44,7 @@
         <p class="card-subtitle">Join StayHealthy in seconds!</p>
       </div>
 
-      <form class="signup-form">
+      <form class="signup-form" onsubmit="validateForm(event)">
         <div class="form-group">
           <label>User</label>
           <div class="input-wrapper select-wrapper">
@@ -113,6 +113,7 @@
             <input
               type="password"
               class="form-control"
+              id="password"
               placeholder="Enter your Password"
               required
             />
@@ -132,8 +133,10 @@
             <input
               type="password"
               class="form-control"
-              placeholder="Confirm you Password"
+              placeholder="Confirm Password"
+              id="confirmPassword"
               required
+
             />
             <button
               type="button"
@@ -164,6 +167,16 @@
     </div>
   </div>
 </section>
-
+<script>
+    function validateForm(event) {
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirmPassword").value;
+    
+        if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            event.preventDefault(); // stops form submission
+        }
+    }
+    </script>
 </body>
 </html>

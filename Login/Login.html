@@ -1,0 +1,101 @@
+<section id="section-header">
+  <header class="site-header container">
+    <a href="#" class="logo">
+      <img
+        src="mylogo.png"
+        alt="StayHealthy Logo"
+      />
+    </a>
+    <nav class="main-nav">
+      <a href="#" class="nav-link active">Home</a>
+      <a href="#" class="nav-link">Appointments</a>
+      <a href="#" class="nav-link">Records</a>
+      <a href="#" class="nav-link">Reviews</a>
+      <a href="#" class="nav-link">Sign Up</a>
+      <a href="#" class="nav-link btn-login">Log In</a>
+    </nav>
+  </header>
+</section>
+
+<section id="section-login">
+  <div class="login-container container">
+    <div class="login-card">
+      <div class="card-header">
+        <img
+          src="${ASSET_PATH}/f8f2a34aae67ba3edd163e069fa0b0e0729c4592.png"
+          alt="StayHealthy Logo"
+          class="card-logo"
+        />
+        <h1 class="card-title">Log In</h1>
+        <p class="card-subtitle">Good to see you again, Log In to continue.</p>
+      </div>
+
+      <form class="login-form">
+        <div class="form-group">
+          <label for="role">User</label>
+          <div class="input-wrapper">
+            <select id="role" name="role" required>
+              <option value="" disabled selected hidden>Select Role</option>
+              <option value="patient">Patient</option>
+              <option value="doctor">Doctor</option>
+              <option value="admin">Admin</option>
+            </select>
+            <img
+              src="${ASSET_PATH}/d62e49071a8b99faff88deb45d242dcd829528ac.png"
+              alt="Expand"
+              class="icon-right"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your Email Address"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="input-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your Password"
+              required
+            />
+            <button
+              type="button"
+              class="btn-toggle-password"
+              aria-label="Toggle password visibility"
+            >
+              <img
+                src="${ASSET_PATH}/0009175343f4d7f765dc0009505b530dd0674865.png"
+                alt="Invisible"
+                class="icon-right"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn-submit">Confirm Details</button>
+
+        <p class="signup-prompt">
+          <span class="text-dark">Don’t have an account yet?</span>
+          <a href="#" class="link-signup">Sign Up</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>

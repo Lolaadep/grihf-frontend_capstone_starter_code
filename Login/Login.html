@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="Login.css">
+
+</head>
+<body>
 <section id="section-header">
   <header class="site-header container">
     <a href="#" class="logo">
@@ -7,12 +21,12 @@
       />
     </a>
     <nav class="main-nav">
-      <a href="#" class="nav-link active">Home</a>
+      <a href="../Landing_Page/LandingPage.html" class="nav-link active">Home</a>
       <a href="#" class="nav-link">Appointments</a>
       <a href="#" class="nav-link">Records</a>
       <a href="#" class="nav-link">Reviews</a>
-      <a href="#" class="nav-link">Sign Up</a>
-      <a href="#" class="nav-link btn-login">Log In</a>
+      <a href="../SignUp/SignUp.html" class="nav-link">Sign Up</a>
+      <a href="../Login/Login.html" class="nav-link btn-login">Log In</a>
     </nav>
   </header>
 </section>
@@ -22,7 +36,7 @@
     <div class="login-card">
       <div class="card-header">
         <img
-          src="${ASSET_PATH}/f8f2a34aae67ba3edd163e069fa0b0e0729c4592.png"
+          src="mylogo.png"
           alt="StayHealthy Logo"
           class="card-logo"
         />
@@ -40,11 +54,7 @@
               <option value="doctor">Doctor</option>
               <option value="admin">Admin</option>
             </select>
-            <img
-              src="${ASSET_PATH}/d62e49071a8b99faff88deb45d242dcd829528ac.png"
-              alt="Expand"
-              class="icon-right"
-            />
+            
           </div>
         </div>
 
@@ -76,11 +86,7 @@
               class="btn-toggle-password"
               aria-label="Toggle password visibility"
             >
-              <img
-                src="${ASSET_PATH}/0009175343f4d7f765dc0009505b530dd0674865.png"
-                alt="Invisible"
-                class="icon-right"
-              />
+              
             </button>
           </div>
         </div>
@@ -99,3 +105,4 @@
     </div>
   </div>
 </section>
+</body>

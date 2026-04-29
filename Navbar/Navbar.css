@@ -44,11 +44,12 @@ button {
   display: flex;
   align-items: center;
   height: 100%;
-  margin-left: -20px; /* Adjusting to match Figma's slight left offset */
+  margin-left: -50px; /* Adjusting to match Figma's slight left offset */
 }
 
 .logo {
-  height: 70px;
+  margin-top: 25px;
+  height: 150px;
   width: auto;
   object-fit: contain;
 }

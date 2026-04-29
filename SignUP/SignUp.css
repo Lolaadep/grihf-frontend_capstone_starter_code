@@ -125,6 +125,7 @@ button {
 .card-logo {
   width: auto;
   height: 120px;
+  margin-bottom: 10px;
   
 }
 .card-title {
@@ -132,7 +133,7 @@ button {
   font-weight: 700;
   color: #066519;
   margin: 0px 0px 10px 0px;
-  margin-bottom: 20px 
+  margin-bottom: 20px;
 
 
 }
